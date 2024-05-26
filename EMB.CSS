@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 
-
 }
 body{
     background-color: black;
@@ -23,22 +22,22 @@ header{
 
 }
 /* essa comando > serve para dizer que essa formatação é especifica para a classe interface dentro do header  */
-header > .interface{ 
+header .interface .cabecalho{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
 /* formatação do texto  */
-header a{
+header .cabecalho a{
     color: rgb(127, 111, 141);
     font-family: "Mukta", sans-serif;
     text-decoration: none;
     display: inline-block;
 }
-header a:hover{
+header .cabecalho a:hover{
     color: rgb(172, 96, 248);
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: .2s;
     text-shadow: 1px 1px 1px rgba(145, 15, 102, 0.988);
     font-size: 20px;
@@ -50,11 +49,11 @@ header nav ul{
 }
 header nav ul li{
     display: inline-block;
-    padding: 0 60px;
+    padding: 0 20px;
 }
 
 /* formataçãp do botão  */
-header .btn-contato button{
+button{
     font-family: "Mukta", sans-serif;
     font-weight: 700;
     color: antiquewhite;
@@ -65,8 +64,10 @@ header .btn-contato button{
     border-radius: 25px;
     cursor: pointer;
 }
-header .btn-contato button:hover{
+button:hover{
     box-shadow: 5px 3px 0px 0px;
+    transform: scale(1.1);
+    transition: .2s;
 }
 
 
@@ -132,7 +133,7 @@ section .especialidades{
     text-align: center;
     font-family: "Mukta", sans-serif;
     font-size: 60px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
     margin-top: 200px;
     
  
@@ -148,13 +149,14 @@ section .especialidades{
     
     
     padding: 40px 4%;
-    gap: 40px;
+    gap: 30px;
     justify-content: space-between;
 }
 .box{
  padding: 40px;
- max-width: 280px;
- transform: scale(1.25);
+ max-width: 25%;
+ 
+
  
 
 }
@@ -257,8 +259,10 @@ section .especialidades{
  
    
 }
-.projetos .caixa a:hover{
-    box-shadow: 0 0 15px white;
+.projetos .caixa :hover{
+    box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
+    transform:scale(1.15);
+    
 }
 .projetos .titulo{
     color: antiquewhite;
