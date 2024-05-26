@@ -1,0 +1,272 @@
+/* formatação geral  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+    height: 100vh;
+
+}
+.interface{
+    max-width: 70%;
+    margin: 0 auto;
+}
+/* estilo do cabeçalho  */
+
+header{
+    padding: 3% 1%;
+
+}
+/* essa comando > serve para dizer que essa formatação é especifica para a classe interface dentro do header  */
+header > .interface{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* formatação do texto  */
+header a{
+    color: rgb(127, 111, 141);
+    font-family: "Mukta", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover{
+    color: rgb(172, 96, 248);
+    transform: scale(1.1);
+    transition: .2s;
+    text-shadow: 1px 1px 1px rgba(145, 15, 102, 0.988);
+    font-size: 20px;
+
+}
+/* aba de navegação */
+header nav ul{
+    list-style-type:none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 60px;
+}
+
+/* formataçãp do botão  */
+header .btn-contato button{
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    color: antiquewhite;
+    background-color:  rgb(118, 22, 105);
+    padding: 10px 40px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+header .btn-contato button:hover{
+    box-shadow: 5px 3px 0px 0px;
+}
+
+
+/* calsse para linha os itens */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* FORMATAÇÃO DO CORPO DO SAITE  */
+.txt-topo-site{
+    font-family: "Mukta", sans-serif;
+    font-size: 25px;
+    max-width: 90px auto;
+    color: aliceblue;
+    padding-top: 0px;
+    
+}
+.txt-topo-site p{
+    margin-bottom: 50px;  
+    font-size: 20px;
+}
+
+.txt-topo-site h1 span{
+    color: rgb(118, 22, 105);
+    font-size: 80px;
+    text-shadow: 9px 7px 1px rgba(139, 14, 97, 0.406); 
+}
+
+section.topo-do-saite .flex{
+    margin-top: 300px;
+    gap: 90px;
+   
+}
+
+/* aplicação do efeito flutuante */
+.topo-do-saite .img-topo-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+/* configuração das especialidades  */
+section .especialidades{
+    padding: 40px 4%;
+}
+.titulo-especialidades{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Mukta", sans-serif;
+    font-size: 60px;
+    margin-bottom: 250px;
+    margin-top: 200px;
+    
+ 
+}
+.titulo-especialidades span{
+    color: rgb(118, 22, 105);
+    
+}
+
+
+
+.especialidades .flex{
+    
+    
+    padding: 40px 4%;
+    gap: 40px;
+    justify-content: space-between;
+}
+.box{
+ padding: 40px;
+ max-width: 280px;
+ transform: scale(1.25);
+ 
+
+}
+.box:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
+    
+    
+}
+.box i{
+    color: blueviolet;
+    font-size: 70px;
+    
+
+}
+
+
+.sutitulo-especialidades{
+    font-size: 25px;
+    font-weight: 500;
+    color: aliceblue;
+    padding-bottom: 10px;
+    font-family: "Mukta", sans-serif;
+   
+}
+
+.texto-especialidades{
+    color: rgba(240, 248, 255, 0.594);
+    font-family: "Mukta", sans-serif;
+}
+
+/* formatação da parte sobre  */
+
+.sobre .flex{
+    margin-top: 300px;
+}
+.texto-sobre{
+    color: aliceblue;
+    padding: 40px 4%;
+    
+   
+}
+.texto-sobre .titulo{
+    max-width: 550px;
+    font-size: 50px;
+    font-family: "Mukta", sans-serif;
+    
+    
+
+}
+.texto-sobre .titulo span{
+    color: darkmagenta;
+    font-family: "Mukta", sans-serif;
+
+
+}
+.texto-sobre .texto{
+    margin-top: 50px;
+    font-size: 25px;
+    max-width: 800px;
+    color:  rgba(240, 248, 255, 0.594);;
+}
+.sobre .contatos{
+    margin-top: 90px;
+    font-size: 30px;
+
+    display: flex;
+    gap: 20px;
+    
+    
+}
+.sobre .contatos .caixa-icones{
+    color: black;
+    background-color: darkorchid;
+    border-radius: 100px;
+    padding: 15px;
+   
+    
+   
+
+}
+.sobre .contatos .caixa-icones:hover{
+    
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
+}
+
+/* fim de sobre */
+/* meus projetos  */
+.projetos .flex{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.487);
+    gap: 40px;
+    justify-content: space-between;
+
+  
+
+}
+.projetos .caixa{
+    padding: 40px 4%; 
+ 
+   
+}
+.projetos .caixa a:hover{
+    box-shadow: 0 0 15px white;
+}
+.projetos .titulo{
+    color: antiquewhite;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.projetos .titulo span{
+   
+    color: rgba(145, 15, 102, 0.988);
+}
