@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="EMB.CSS"">
+    <link rel="stylesheet" href="EMB.CSS">
     <title>Document</title>
     <!-- fonte google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,7 @@
 <!-- icones dawload -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <!-- fim dos icones dawload -->
+ <script src="logico.js"></script>
 </head>
 <body>
    <header>
@@ -37,14 +38,18 @@
             </nav><!--menu de interação -->
     
             <div class="btn-contato">
-                <a href="">
-                    <button>contato</button>
-                </a>
+                
+                    <button onclick="abrirmodal()">contato</button>
+                
                 
             </div><!--botão contato -->
                 
         </div>
     </div><!--interface -->
+
+
+
+
 
    <main>
 
@@ -62,9 +67,9 @@
                     </p>
 
                     <div class="btn-contato">
-                        <a href="">
-                            <button>Entre em contato</button>
-                        </a>
+                        
+                            <button onclick="abrirmodal()">Entre em contato</button>
+                        
                     </div>
 
                 </div><!-- txt topo pagina e botao   -->
@@ -83,7 +88,7 @@
         
     </section ><!-- topo-do-site -->
 
-    
+</header>
     
     <section class="especialidades">
         <div class="interface">
@@ -91,34 +96,47 @@
             <div class="flex">
 
                 
-                <div class="box">
+                <div class="box" class="analise-de-dados" id="analise-de-dados">
                     <i class="bi bi-graph-up-arrow"></i>
-                    <h3 class="sutitulo-especialidades">
-                        analise de dados 
-                    </h3>
-                    <p class="texto-especialidades">tenho experiencia em programção python para analise de dados, e automação de tarefas  </p>
-                    
+                <h3 class="sutitulo-especialidades">
+                    analise de dados 
+                </h3>
+                <!-- <p class="texto-especialidades">tenho experiencia em programção python para analise de dados, e automação de tarefas  </p>
+                 -->
                     
                 </div>
             
-                <div class="box">
-                    <i class="bi bi-code-square"></i>
+                <div class="flex" class="website1">
+
+                    <div class="box" class="website" id="website">
+                        <i class="bi bi-code-square"></i>
                     <h3 class="sutitulo-especialidades"> 
                         website
                     </h3>
-                    <p class="texto-especialidades">tenho experiência na criação de sites de design responsivo e formularios com integração no banco de dados </p>
+                    </div>
+
+                     <!-- modal -->
+                   
+                    
+                </div>
+                
+               <!-- banco de dados-->
+                <div class="flex">
+                    
+                <div class="box" class="banco-de-dados" id="banco-de-dados">
+                    <i class="bi bi-database"></i>
+                <h3 class="sutitulo-especialidades">
+                    banco de dados 
+                </h3>
+                    
+                    <!-- <p class="texto-especialidades">trabalho com servidor apach é com o SGBD MySQL</p> -->
                 </div>
 
-                    
+                <!-- modal -->
 
-                    
                
-                <div class="box">
-                    <i class="bi bi-database"></i>
-                    <h3 class="sutitulo-especialidades">
-                        banco de dados 
-                    </h3>
-                    <p class="texto-especialidades">trabalho com servidor apach é com o SGBD MySQL</p>
+
+
                 </div>
 
 
@@ -143,12 +161,12 @@
                 <div class="texto-sobre">
                     <h1 class="titulo">MUINTO PRAZER, <br><span> SOU KEVIN BARROS.</span> </h1>
                     <p class="texto">Comecei meus estudos aos 14 anos e não parei desde então, busco sempre soluçoes com o uso de novas tecnologias e novos conhecimentos.
-                        dentre as minhas 
                     </p>
                     <div class="contatos">
-                        <div class="caixa-icones"><i class="bi bi-instagram"></i></div>
-                        <div class="caixa-icones"><i class="bi bi-person-lines-fill"></i></div>
-                        <div class="caixa-icones"><i class="bi bi-linkedin"></i></div>
+                        <div class="caixa-icones"><a href="https://www.instagram.com/kevinjosejardindebarros"><i class="bi bi-instagram"></i></a></div>
+                        <div class="caixa-icones"><a href="https://api.whatsapp.com/qr/IWQE7PP7VX26H1?autoload=1&app_absent=0"><i class="bi bi-whatsapp"></i></a></div>
+                        <div class="caixa-icones"><a href="https://www.linkedin.com/in/kevin-jose-jardin-de-barros-26166929a/"><i class="bi bi-linkedin"></i></a></div>
+                        <div class="caixa-icones"><a href="https://github.com/kevinjose5"><i class="bi bi-github"></i></a></div>
                     </div>
 
                 </div>
@@ -171,31 +189,69 @@
             </div>
         </div>
     </section> <!-- fim de projetos  -->
+
+    
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
    </main>
-    
+
+
+
+
+
+
+
+
+
+
+
+   <!-- janela modal de contatos  -->
+   <section>
+    <div class="contatos-modal-flex">
+        <div class="pagina-contato" id="pagina-contato">
+            <div class="contatos-modal">
+                
+            <div class="flex"><div class="contorno"><a href="https://www.instagram.com/kevinjosejardindebarros"><i class="bi bi-instagram"></i></a> </div><div class="contorno-texto"><h1>@kevinjosejardindebarros</h1></div></div>
+            <div class="flex"><div class="contorno"><a href="https://api.whatsapp.com/qr/IWQE7PP7VX26H1?autoload=1&app_absent=0"><i class="bi bi-whatsapp"></i></a></div><div class="contorno-texto"><h1>(41) 99801-8999</h1></div></div>
+            <div class="flex"><div class="contorno"><a href="https://www.linkedin.com/in/kevin-jose-jardin-de-barros-26166929a/"><i class="bi bi-linkedin"></i></a></div><div class="contorno-texto"><h1>Perfil de kevin</h1></div></div>
+            <div class="flex"><div class="contorno"><a href="https://github.com/kevinjose5"><i class="bi bi-github"></i></a></div><div class="contorno-texto"><h1>kevinjose5</h1></div></div>    
+
+
+
+
+                    
+                
+                
+               
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
     
-   </header>
+   
 
         
 
     
     
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
