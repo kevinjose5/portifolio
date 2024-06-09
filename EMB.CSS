@@ -2,12 +2,12 @@
 
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 
 }
 body{
-    background-color: black;
+    background-color: rgb(18, 18, 18);
     height: 100vh;
 
 }
@@ -133,7 +133,7 @@ section .especialidades{
     text-align: center;
     font-family: "Mukta", sans-serif;
     font-size: 60px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     margin-top: 200px;
     
  
@@ -153,9 +153,14 @@ section .especialidades{
     justify-content: space-between;
 }
 .box{
- padding: 40px;
- max-width: 25%;
  
+ 
+ height: 250px;
+ width:200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 
  
 
@@ -180,6 +185,7 @@ section .especialidades{
     color: aliceblue;
     padding-bottom: 10px;
     font-family: "Mukta", sans-serif;
+  
    
 }
 
@@ -188,10 +194,27 @@ section .especialidades{
     font-family: "Mukta", sans-serif;
 }
 
+.website{
+    position: flex;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* formatação da parte sobre  */
 
 .sobre .flex{
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .texto-sobre{
     color: aliceblue;
@@ -233,10 +256,9 @@ section .especialidades{
     background-color: darkorchid;
     border-radius: 100px;
     padding: 15px;
-   
-    
-   
-
+}
+.sobre .contatos .caixa-icones a{
+    color: black;
 }
 .sobre .contatos .caixa-icones:hover{
     
@@ -246,6 +268,9 @@ section .especialidades{
 
 /* fim de sobre */
 /* meus projetos  */
+.projetos{
+  padding-bottom: 100px;
+}
 .projetos .flex{
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.487);
     gap: 40px;
@@ -262,6 +287,7 @@ section .especialidades{
 .projetos .caixa :hover{
     box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
     transform:scale(1.15);
+   
     
 }
 .projetos .titulo{
@@ -275,3 +301,88 @@ section .especialidades{
    
     color: rgba(145, 15, 102, 0.988);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* janela modal dos contatos  */
+.pagina-contato{
+    background-color: rgba(50, 50, 50, 0.735);
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    padding: 50px;
+    bottom: 900px;
+    
+}
+
+.contatos-modal{
+background-color: rgb(18, 18, 18);
+
+padding: 50px;
+color: antiquewhite;
+border-radius: 25px;
+box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
+
+}
+.contorno{
+    
+    padding: 15px;
+    border-radius: 40px;
+    background-color: rgba(145, 15, 102, 0.988);
+    font-size: 30px;
+    cursor: pointer;
+}
+.contorno a{
+    color:  rgb(255, 253, 253) ;
+}
+.contorno:hover{
+    transform:scale(1.15);
+}
+
+
+
+.contorno-texto{
+   
+    font-family: "Mukta", sans-serif;
+    font-weight: 700;
+    color: antiquewhite;
+    background-color:  rgba(240, 248, 255, 0.172);
+    padding: 10px 40px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 35px;
+    width: 400px;
+    
+}
+.contatos-modal .flex{
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.pagina-contato.abrir{
+
+    display: flex;
+}
+
+
+
+/* janelas modal websaites especialidades */
+
+
+
