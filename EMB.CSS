@@ -77,6 +77,10 @@ button:hover{
     display: flex;
     align-items: center;
 }
+.flex1{
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -286,7 +290,7 @@ section .especialidades{
 }
 .projetos .caixa :hover{
     box-shadow: 0 0 15px rgba(145, 15, 102, 0.988);
-    transform:scale(1.15);
+    transform:scale(1.1);
    
     
 }
@@ -301,8 +305,21 @@ section .especialidades{
    
     color: rgba(145, 15, 102, 0.988);
 }
+/*formatação da janela rolavel dos projetos   */
+.scroll-container {
+  position: relative;
 
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
 
+.scroll-content {
+  display: flex;
+  gap: 10px;
+  transition: scroll-behavior 0.3s;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
 
 
 
